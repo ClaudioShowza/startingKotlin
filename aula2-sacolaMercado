@@ -5,4 +5,13 @@ fun main() {
     sacola.put("kiwi ", 5)
     
     println(sacola)
+    
+        var soma = 0
+    for ((produto, quantidade) in sacola) {
+        if (produtos.containsKey(produto)) {
+            soma += produtos[produto]!! + quantidade
+        }
+    }
+    
+    println("A soma dos itens na sacola é: $soma")
 }
